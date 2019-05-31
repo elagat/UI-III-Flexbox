@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,118 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+header {
+	display: flex;
+}
+
+header nav {
+	margin-top: 40px;
+}
+
+header nav a {
+	margin: 0 20px;
+	color: gray;
+  text-decoration: none;
+}
+
+.logo {
+	position: relative;
+	left: 130px;
+	top: 20px;
+}
+
+.intro {
+	display: flex;
+	justify-content: space-around;
+}
+
+.left-intro {
+	padding: 80px 0;
+}
+
+.right-intro {
+	padding: 50px 0;
+}
+
+h1 {
+	font-size: 90px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button {
+	position: relative;
+	left: 130px;
+}
+
+.top-content {
+	display: flex;
+	padding: 15px;
+}
+
+.middle-img {
+	padding: 20px 0;
+}
+
+.bottom-content {
+	display: flex;
+	padding: 15px;
+}
+
+.copyright {
+	position: relative;
+	left: 400px;
+}
+
+/* Services page */
+
+.services-header-img{
+	padding: 30px 0;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+.box-paragraph{
+	padding-bottom: 30px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content-pieces {
+	border: solid black 2px;
+	width: 420px;
+	height: 220px;
+	padding: 20px;
+	background-color: lightgray;
+	margin: 20px 0;
+}
+
+.services-bottom {
+	display: flex;
+}
+
+.services-list {
+	padding: 30px 0 50px 0;
+}
+
+.named-paragraph {
+	padding-right: 30px;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	padding: 15px 0;
+}
